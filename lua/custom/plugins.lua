@@ -1,5 +1,9 @@
 local plugins = {
   {
+  "nvim-lua/plenary.nvim",
+  lazy=false,
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
@@ -66,5 +70,18 @@ local plugins = {
         return M
     end,
   },
+    {
+  "zbirenbaum/copilot.lua",
+    lazy=false,
+  config = function ()
+    require("copilot").setup()
+  end
+},
+{
+  "zbirenbaum/copilot-cmp",
+  config = function ()
+    require("copilot_cmp").setup()
+  end
+},
 }
 return plugins
