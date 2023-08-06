@@ -9,9 +9,16 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.wrap = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+
+-- Set undodir depending on OS
+if package.config:sub(1, 1) == "\\" then
+    vim.opt.undodir = os.getenv("USERPROFILE") .. "/.vim/undodir"
+else
+    vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+end
 vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.termguicolors = true
-vim.opt.colorcolumn = "100"
-vim.opt.signcolumn = "yes"
