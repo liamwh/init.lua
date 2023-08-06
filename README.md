@@ -1,3 +1,3 @@
-# Liam's Neovim Configuration
+# Liam's Neovim configuration
 
 enjoy
