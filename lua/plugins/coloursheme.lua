@@ -1,11 +1,11 @@
 return {
-  {
-    "ayu-theme/ayu-vim",
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "ayu",
+    {
+        "Shatur/neovim-ayu",
     },
-  },
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "ayu",
+        },
+    },
 }
