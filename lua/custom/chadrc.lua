@@ -16,12 +16,6 @@
  vim.opt.termguicolors = true
  vim.opt.colorcolumn = "100"
  vim.opt.signcolumn = "yes"
--- Custom mappings
-M.custom = {
-  mappings = {
-    normal = {
-      { "F2", "<cmd>lua vim.lsp.buf.rename()<CR>" }
-    }
-  }
-}
+ vim.api.nvim_set_keymap('x', '<Up>', ":move '<-2<CR>gv-gv", { noremap = true, silent = true })
+ vim.api.nvim_set_keymap('x', '<Down>', ":move '>+1<CR>gv-gv", { noremap = true, silent = true })
  return M

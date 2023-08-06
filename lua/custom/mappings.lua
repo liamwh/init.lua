@@ -1,4 +1,4 @@
--- local M = {}
+local M = {}
 --
 -- M.dap = {
 --   n = {
@@ -16,5 +16,5 @@
 --     "Open debugging sidebar"
 --   }
 -- }
--- return M
+return M
 
