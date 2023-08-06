@@ -20,10 +20,15 @@ local plugins = {
     opts = { tools = { inlay_hints = { auto = false } } },
 },
 {
-    "mbbill/undotree"
+    "mbbill/undotree",
+    lazy = false,
+    config = function ()
+        require "custom.configs.undotree"
+    end,
 },
     {
-        "tpope/vim-fugitive"
+        "tpope/vim-fugitive",
+        lazy=false,
     },
 {
     "nvim-treesitter/nvim-treesitter",
