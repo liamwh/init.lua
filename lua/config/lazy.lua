@@ -20,11 +20,13 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.python" },
         { import = "lazyvim.plugins.extras.lang.docker" },
         { import = "lazyvim.plugins.extras.lang.terraform" },
+        { import = "lazyvim.plugins.extras.lang.yaml" },
 
         -- extras other than languages
         { import = "lazyvim.plugins.extras.coding.copilot" },
         { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.dap.core" },
+        { import = "lazyvim.plugins.extras.vscode" },
 
         -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
         -- import/override with your plugins
