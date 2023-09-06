@@ -42,6 +42,7 @@ return {
                 "dockerfile",
                 "toml",
                 "terraform",
+                "vhs",
             },
         },
     },
