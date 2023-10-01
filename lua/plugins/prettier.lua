@@ -1,20 +1,27 @@
 return {
     {
-        "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
         opts = function(_, opts)
             local nls = require("null-ls")
             nls.builtins.formatting.prettierd.with({
                 extra_filetypes = { "svelte" },
             })
-            table.insert(opts.sources, nls.builtins.formatting.prettierd)
         end,
     },
     {
         "williamboman/mason.nvim",
         opts = {
             ensure_installed = {
-                "prettier",
+                -- "prettier",
                 "prettierd",
+            },
+        },
+    },
+    {
+        "stevearc/conform.nvim",
+        opts = {
+            formatters_by_ft = {
+                ["svelte"] = { { "prettierd", "prettier" } },
             },
         },
     },

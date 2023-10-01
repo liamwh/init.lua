@@ -21,8 +21,9 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.docker" },
         { import = "lazyvim.plugins.extras.lang.terraform" },
         { import = "lazyvim.plugins.extras.lang.yaml" },
-        -- extras other than languages
+        -- extras
         { import = "lazyvim.plugins.extras.linting.eslint" },
+        { import = "lazyvim.plugins.extras.formatting.conform" },
         { import = "lazyvim.plugins.extras.formatting.prettier" },
         { import = "lazyvim.plugins.extras.coding.copilot" },
         { import = "lazyvim.plugins.extras.util.project" },
