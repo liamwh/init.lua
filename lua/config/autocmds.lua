@@ -19,3 +19,6 @@ if vim.fn.has("wsl") == 1 then
         cache_enabled = 1,
     }
 end
+
+-- Auto fmt .feature files using ghokin on save
+vim.api.nvim_command("autocmd BufWritePost *.feature !ghokin fmt replace " .. vim.fn.expand("%:p:h"))
