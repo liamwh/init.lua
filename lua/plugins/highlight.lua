@@ -24,6 +24,7 @@ return {
                 "json",
                 "lua",
                 "markdown",
+                "mermaid",
                 "markdown_inline",
                 "python",
                 "proto",
