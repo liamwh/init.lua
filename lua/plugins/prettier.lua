@@ -14,6 +14,7 @@ return {
             ensure_installed = {
                 "prettierd",
                 "codelldb",
+                "powershell-editor-services",
             },
         },
     },
