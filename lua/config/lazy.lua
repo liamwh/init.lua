@@ -26,6 +26,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.formatting.prettier" },
         { import = "lazyvim.plugins.extras.ui.alpha" },
         { import = "lazyvim.plugins.extras.coding.copilot" },
+        { import = "lazyvim.plugins.extras.coding.yanky" },
         { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.dap.core" },
         { import = "lazyvim.plugins.extras.lsp.none-ls" },
