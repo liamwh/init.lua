@@ -21,17 +21,24 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.docker" },
         { import = "lazyvim.plugins.extras.lang.terraform" },
         { import = "lazyvim.plugins.extras.lang.yaml" },
-        -- extras
+        -- linting/formatting
         { import = "lazyvim.plugins.extras.linting.eslint" },
         { import = "lazyvim.plugins.extras.formatting.prettier" },
+        -- ui
         { import = "lazyvim.plugins.extras.ui.alpha" },
+        -- coding
         { import = "lazyvim.plugins.extras.coding.copilot" },
         { import = "lazyvim.plugins.extras.coding.yanky" },
-        { import = "lazyvim.plugins.extras.util.project" },
+        -- dap
         { import = "lazyvim.plugins.extras.dap.core" },
+        -- lsp
         { import = "lazyvim.plugins.extras.lsp.none-ls" },
+        -- editor
         { import = "lazyvim.plugins.extras.editor.leap" },
+        { import = "lazyvim.plugins.extras.editor.symbols-outline" },
+        -- other
         { import = "lazyvim.plugins.extras.vscode" },
+        { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.test.core" },
 
         -- import/override with your plugins
