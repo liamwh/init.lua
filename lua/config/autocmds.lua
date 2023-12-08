@@ -22,3 +22,5 @@ end
 
 -- Auto fmt .feature files using ghokin on save
 vim.api.nvim_command("autocmd BufWritePost *.feature !ghokin fmt replace " .. vim.fn.expand("%:p:h"))
+
+vim.api.nvim_command("command! Unix !dos2unix %")
