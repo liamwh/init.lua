@@ -33,7 +33,7 @@ require("lazy").setup({
         -- dap
         { import = "lazyvim.plugins.extras.dap.core" },
         -- lsp
-        { import = "lazyvim.plugins.extras.lsp.none-ls" },
+        -- { import = "lazyvim.plugins.extras.lsp.none-ls" },
         -- editor
         { import = "lazyvim.plugins.extras.editor.leap" },
         { import = "lazyvim.plugins.extras.editor.symbols-outline" },
