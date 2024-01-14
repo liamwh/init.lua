@@ -13,6 +13,9 @@ vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
 
+-- Use the system keyboard
+vim.opt.clipboard = "unnamedplus"
+
 -- Set undodir depending on OS
 if package.config:sub(1, 1) == "\\" then
     vim.opt.undodir = os.getenv("USERPROFILE") .. "/.vim/undodir"

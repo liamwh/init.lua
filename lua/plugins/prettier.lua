@@ -9,16 +9,6 @@ return {
     --     end,
     -- },
     {
-        "williamboman/mason.nvim",
-        opts = {
-            ensure_installed = {
-                "prettierd",
-                "codelldb",
-                "powershell-editor-services",
-            },
-        },
-    },
-    {
         "stevearc/conform.nvim",
         opts = {
             formatters_by_ft = {
