@@ -5,6 +5,10 @@ return {
         dependencies = { "othree/html5.vim", "pangloss/vim-javascript" },
     },
     {
+        "luckasRanarison/tree-sitter-hyprlang",
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
+    },
+    {
         -- Justfiles
         "vmchale/just-vim",
     },

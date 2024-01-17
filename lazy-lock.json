@@ -74,6 +74,7 @@
   "telescope.nvim": { "branch": "master", "commit": "da8b3d485975a8727bea127518b65c980521ae22" },
   "todo-comments.nvim": { "branch": "main", "commit": "4a6737a8d70fe1ac55c64dfa47fcb189ca431872" },
   "tokyonight.nvim": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
+  "tree-sitter-hyprlang": { "branch": "master", "commit": "42aa7274b5f093cec92b7a5bab629ba26b4be439" },
   "tree-sitter-surrealdb.nvim": { "branch": "main", "commit": "20ab9defbef56a06f9805cca3029a654c7a2204e" },
   "tree-sitter-vhs": { "branch": "main", "commit": "9534865e614c95eb9418e5e73f061c32fa4d9540" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
