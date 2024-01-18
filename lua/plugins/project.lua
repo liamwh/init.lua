@@ -1,7 +1,11 @@
 return {
     "ahmedkhalf/project.nvim",
     opts = {
-        manual_mode = false,
+        manual_mode = true,
+        patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "justfile" },
+        exlude_dirs = { "~/.cargo/*", "~/git/Veloxide/frontends/*" },
+        silent_chdir = false,
+        scope_chdir = 'tab',
     },
     event = "VeryLazy",
     config = function(_, opts)
@@ -13,8 +17,4 @@ return {
     keys = {
         { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
     },
-    patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "justfile" },
-    exlude_dirs = { "~/.cargo/*" },
-    silent_chdir = false,
-    scope_chdir = 'tab',
 }
