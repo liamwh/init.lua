@@ -34,8 +34,13 @@ return {
                 "ron",
                 "go",
                 "bash",
-                -- rest
+                -- devops,
+                "terraform",
+                "hcl",
+                -- low-level
                 "c",
+                "zig",
+                -- rest
                 "c_sharp",
                 "diff",
                 "gitignore",
@@ -59,10 +64,8 @@ return {
                 "yaml",
                 "dockerfile",
                 "toml",
-                "terraform",
                 "vhs",
                 "xml",
-                "zig",
             },
         },
     },
