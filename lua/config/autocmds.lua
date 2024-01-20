@@ -24,3 +24,17 @@ end
 vim.api.nvim_command("autocmd BufWritePost *.feature !ghokin fmt replace " .. vim.fn.expand("%:p:h"))
 
 vim.api.nvim_command("command! Unix !dos2unix %")
+
+-- treat .tfstate files as json
+vim.api.nvim_create_augroup('filetype_tfstate', { clear = true })
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+    pattern = '*.tfstate',
+    command = 'set filetype=json',
+    group = 'filetype_tfstate',
+})
+
+-- treat .env.example files akin to .env files
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = "*.env.example",
+    command = "set filetype=sh",
+})
