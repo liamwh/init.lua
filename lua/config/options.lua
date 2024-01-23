@@ -29,3 +29,9 @@ vim.opt.termguicolors = true
 if vim.g.neovide then
     vim.o.guifont = "JetBrainsMono_Nerd_Font_Mono:h14"
 end
+
+vim.filetype.add({
+    extension = {
+        postcss = "css",
+    },
+})
