@@ -12,7 +12,7 @@ require("lazy").setup({
         -- add LazyVim and import its plugins
         {
             "LazyVim/LazyVim",
-            import = "lazyvim.plugins"
+            import = "lazyvim.plugins",
         },
 
         -- languages
@@ -44,8 +44,10 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.editor.symbols-outline" },
         -- other
         { import = "lazyvim.plugins.extras.vscode" },
-        { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.test.core" },
+        -- utils
+        { import = "lazyvim.plugins.extras.util.project" },
+        { import = "lazyvim.plugins.extras.util.dot" },
 
         -- import/override with your plugins
         { import = "plugins" },
