@@ -42,6 +42,13 @@ return {
                     input_label = "> ",
                     model = "mistral",
                     action = "display",
+                },
+                Fix_Bug_With_Selection = {
+                    prompt =
+                    "With this code: \n\n$sel\n\nI get the following error: \n\n$input\n\n Please fix the issue for me. Here's the entire file contents in case that helps: \n\n$buf",
+                    input_label = "> ",
+                    model = "mistral",
+                    action = "display",
                 }
             }
         },
