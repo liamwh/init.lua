@@ -35,6 +35,7 @@ return {
         -- All the user commands added by the plugin
         cmd = { "Ollama", "OllamaModel", "OllamaServe", "OllamaServeStop" },
         opts = {
+            model = "dolphin-mixtral",
             prompts = {
                 Document_Rust_Code = {
                     prompt =
