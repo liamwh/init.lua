@@ -61,6 +61,7 @@ return {
                 "vhs",
                 -- rest
                 "c",
+                "agda",
                 "diff",
                 "jq",
                 "ssh_config",
