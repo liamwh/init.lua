@@ -17,8 +17,8 @@ vim.api.nvim_set_keymap(
 )
 
 -- Ollama / gen.nvim
-vim.api.nvim_set_keymap("n", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
-vim.api.nvim_set_keymap("v", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
+-- vim.api.nvim_set_keymap("n", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
+-- vim.api.nvim_set_keymap("v", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
 
 -- Substitute (mentally named replace, hence the r)
 vim.api.nvim_set_keymap(
