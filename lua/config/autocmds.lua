@@ -38,3 +38,11 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     pattern = "*.env.example",
     command = "set filetype=sh",
 })
+
+-- Use markdown when using firenvim to write Markdown on GitHub
+vim.api.nvim_create_autocmd({ 'BufEnter' }, {
+    pattern = "github.com_*.txt",
+    callback = function()
+        vim.bo.filetype = "markdown"
+    end
+})
