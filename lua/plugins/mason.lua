@@ -6,8 +6,10 @@ return {
             "codelldb",
             "powershell-editor-services",
             "docker-compose-language-service",
+            "markdownlint",
             "svelte-language-server",
             "helm-ls",
+            "oxlint",
         },
     },
 }
