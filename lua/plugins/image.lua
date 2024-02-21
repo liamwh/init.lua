@@ -1,7 +1,14 @@
+local is_mac = vim.loop.os_uname().sysname == "Darwin"
+-- Uncomment to get the os_info printed, use :messages to see the output
+-- local os_info = vim.loop.os_uname()
+-- for k, v in pairs(os_info) do
+--     print(k .. ': ' .. v)
+-- end
 return {
     {
         "3rd/image.nvim",
         lazy = vim.g.started_by_firenvim,
+        cond = not is_mac,
         config = function()
             require("image").setup({
                 backend = "kitty",
