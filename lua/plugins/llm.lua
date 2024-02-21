@@ -4,15 +4,14 @@ return {
         config = function()
             require("gen").model = "mistral"
             require("gen").prompts["Document_Code"] = {
-                prompt =
-                "Add doc comments to the following code. In Rust files, they are denoted by `///`. Only ouput the result in format ```$filetype\n...\n```:\n```$filetype\n$text\n```",
+                prompt = "Add doc comments to the following code. In Rust files, they are denoted by `///`. Only ouput the result in format ```$filetype\n...\n```:\n```$filetype\n$text\n```",
                 replace = true,
                 extract = "```$filetype\n(.-)```",
             }
         end,
     },
     {
-        'stevearc/dressing.nvim',
+        "stevearc/dressing.nvim",
         lazy = true,
         init = function()
             ---@diagnostic disable-next-line: duplicate-set-field
@@ -35,23 +34,21 @@ return {
         -- All the user commands added by the plugin
         cmd = { "Ollama", "OllamaModel", "OllamaServe", "OllamaServeStop" },
         opts = {
-            model = "dolphin-mixtral",
+            model = "mistral",
             prompts = {
                 Document_Rust_Code = {
-                    prompt =
-                    "Add doc comments to the following code. In Rust files, they are denoted by `///`.",
+                    prompt = "Add doc comments to the following code. In Rust files, they are denoted by `///`.",
                     input_label = "> ",
                     model = "mistral",
                     action = "display",
                 },
                 Fix_Bug_With_Selection = {
-                    prompt =
-                    "With this code: \n\n$sel\n\nI get the following error: \n\n$input\n\n Please fix the issue for me. Here's the entire file contents in case that helps: \n\n$buf",
+                    prompt = "With this code: \n\n$sel\n\nI get the following error: \n\n$input\n\n Please fix the issue for me. Here's the entire file contents in case that helps: \n\n$buf",
                     input_label = "> ",
                     model = "mistral",
                     action = "display",
-                }
-            }
+                },
+            },
         },
         keys = {
             -- Sample keybind for prompt menu. Note that the <c-u> is important for selections to work properly.
