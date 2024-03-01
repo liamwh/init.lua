@@ -9,6 +9,7 @@ return {
         "3rd/image.nvim",
         lazy = vim.g.started_by_firenvim,
         cond = not is_mac,
+        enabled = false,
         config = function()
             require("image").setup({
                 backend = "kitty",
