@@ -1,7 +1,7 @@
 return {
     "ahmedkhalf/project.nvim",
     opts = {
-        manual_mode = true,
+        manual_mode = false,
         patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "justfile" },
         exlude_dirs = { "~/.cargo/*", "~/git/Veloxide/frontends/*" },
         silent_chdir = false,
