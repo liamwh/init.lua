@@ -4,10 +4,10 @@ return {
         "leafOfTree/vim-svelte-plugin",
         dependencies = { "othree/html5.vim", "pangloss/vim-javascript" },
     },
-    {
-        "luckasRanarison/tree-sitter-hyprlang",
-        dependencies = { "nvim-treesitter/nvim-treesitter" },
-    },
+    -- {
+    --     "luckasRanarison/tree-sitter-hyprlang",
+    --     dependencies = { "nvim-treesitter/nvim-treesitter" },
+    -- },
     {
         -- Justfiles
         "vmchale/just-vim",
@@ -22,6 +22,7 @@ return {
             ensure_installed = {
                 -- staples
                 "json",
+                "http",
                 "gitignore",
                 "yaml",
                 "lua",
@@ -73,6 +74,7 @@ return {
                 "vimdoc",
                 "yaml",
                 "dockerfile",
+                "hyprlang",
                 "toml",
                 "vhs",
                 "xml",
