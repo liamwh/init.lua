@@ -42,7 +42,7 @@ require("lazy").setup({
         -- editor
         { import = "lazyvim.plugins.extras.editor.mini-files" },
         { import = "lazyvim.plugins.extras.editor.leap" },
-        { import = "lazyvim.plugins.extras.editor.symbols-outline" },
+        { import = "lazyvim.plugins.extras.editor.outline" },
         -- other
         { import = "lazyvim.plugins.extras.vscode" },
         { import = "lazyvim.plugins.extras.test.core" },
