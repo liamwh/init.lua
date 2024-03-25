@@ -12,9 +12,9 @@ return {
         "stevearc/conform.nvim",
         opts = {
             formatters_by_ft = {
-                ["svelte"] = { { "prettierd", "prettier" } },
-                ["js"] = { { "prettierd", "prettier" } },
-                ["ts"] = { { "prettierd", "prettier" } },
+                ["svelte"] = { { "prettierd", "prettier", "biome" } },
+                ["js"] = { { "prettierd", "prettier", "biome" } },
+                ["ts"] = { { "prettierd", "prettier", "biome" } },
             },
         },
     },

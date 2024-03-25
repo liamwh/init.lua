@@ -3,6 +3,7 @@ return {
     opts = {
         ensure_installed = {
             "prettierd",
+            "biome",
             "codelldb",
             "powershell-editor-services",
             "docker-compose-language-service",
