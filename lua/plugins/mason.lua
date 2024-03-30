@@ -11,6 +11,7 @@ return {
             "marksman",
             "svelte-language-server",
             "helm-ls",
+            "glow",
             "oxlint",
         },
     },
