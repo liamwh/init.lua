@@ -36,7 +36,6 @@ vim.filetype.add({
     },
 })
 
-
 -- Set the Lua package paths for Neovim
 local home = os.getenv("HOME")
 package.path = package.path .. ";"
@@ -45,3 +44,6 @@ package.path = package.path .. ";"
 
 package.cpath = package.cpath .. ";"
     .. home .. "/.luarocks/lib/lua/5.1/?.so;"
+
+-- Set the Python path for Neovim
+vim.g.python3_host_prog = '~/.config/nvim/py3nvim/bin/python'
