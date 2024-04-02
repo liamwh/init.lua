@@ -46,3 +46,12 @@ vim.api.nvim_create_autocmd({ 'BufEnter' }, {
         vim.bo.filetype = "markdown"
     end
 })
+-- Make sure markdown files use 2 spaces for indentation
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt_local.shiftwidth = 2
+        vim.opt_local.tabstop = 2
+        vim.opt_local.expandtab = true
+    end,
+})
