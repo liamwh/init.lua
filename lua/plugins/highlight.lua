@@ -28,7 +28,6 @@ return {
                 "toml",
                 "bash",
                 "regex",
-                "just",
                 "sql",
                 "toml",
                 "yaml",
