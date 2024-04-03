@@ -91,6 +91,7 @@ return {
                 "ruby",
                 "vimdoc",
                 "query", -- Tree Sitter query
+                "kdl",
                 "hyprlang",
                 "vhs",
                 "xml",
