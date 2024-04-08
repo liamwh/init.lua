@@ -47,3 +47,6 @@ package.cpath = package.cpath .. ";"
 
 -- Set the Python path for Neovim
 vim.g.python3_host_prog = '~/.config/nvim/py3nvim/bin/python'
+
+-- Neovide
+vim.g.neovide_scroll_animation_length = 0.2
