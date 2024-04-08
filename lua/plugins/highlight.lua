@@ -54,6 +54,8 @@ return {
                 -- devops,
                 "terraform",
                 "dockerfile",
+                "graphql",
+                "hurl",
                 "nix",
                 "helm",
                 "cue",
@@ -73,19 +75,25 @@ return {
                 "agda",
                 -- terminal
                 "tmux",
+                -- Authorisation
+                "rego",
+                "authzed",
+                -- Interface Description Languages
+                "smithy",
+                "proto",
+                -- blockchain
+                "solidity",
                 -- rest
                 "c_sharp",
+                "java",
                 "elixir",
                 "gleam",
-                "java",
                 "ocaml",
                 "php",
                 "kotlin",
                 "jq",
                 "ssh_config",
                 "python",
-                "proto",
-                "rego",
                 "query",
                 "vim",
                 "ruby",
