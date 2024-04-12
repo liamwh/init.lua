@@ -9,6 +9,9 @@ return {
         "vmchale/just-vim",
     },
     {
+        "bufbuild/tree-sitter-cel",
+    },
+    {
         -- Language parsers
         "nvim-treesitter/nvim-treesitter",
         opts = {
