@@ -1,9 +1,11 @@
 return {
     {
         "folke/twilight.nvim",
+        enabled = false,
     },
     {
         "folke/zen-mode.nvim",
+        enabled = false,
         cmd = "ZenMode",
         opts = {
             plugins = {
