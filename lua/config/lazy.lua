@@ -37,11 +37,10 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.coding.yanky" },
         -- dap
         { import = "lazyvim.plugins.extras.dap.core" },
-        -- lsp
-        -- { import = "lazyvim.plugins.extras.lsp.none-ls" },
         -- editor
         { import = "lazyvim.plugins.extras.editor.mini-files" },
         { import = "lazyvim.plugins.extras.editor.leap" },
+        { import = "lazyvim.plugins.extras.editor.trouble-v3" },
         { import = "lazyvim.plugins.extras.editor.outline" },
         -- other
         { import = "lazyvim.plugins.extras.vscode" },
