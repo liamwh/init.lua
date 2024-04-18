@@ -46,7 +46,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.editor.mini-diff" },
         { import = "lazyvim.plugins.extras.editor.mini-move" },
         { import = "lazyvim.plugins.extras.editor.leap" },
-        { import = "lazyvim.plugins.extras.editor.trouble-v3" },
+        -- { import = "lazyvim.plugins.extras.editor.trouble-v3" },
         { import = "lazyvim.plugins.extras.editor.outline" },
         -- other
         { import = "lazyvim.plugins.extras.vscode" },
