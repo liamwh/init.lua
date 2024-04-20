@@ -23,10 +23,14 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.go" },
         { import = "lazyvim.plugins.extras.lang.markdown" },
         { import = "lazyvim.plugins.extras.lang.python" },
+        { import = "lazyvim.plugins.extras.lang.ansible" },
         { import = "lazyvim.plugins.extras.lang.docker" },
         { import = "lazyvim.plugins.extras.lang.terraform" },
         { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.lang.tex" },
+        { import = "lazyvim.plugins.extras.lang.helm" },
+        { import = "lazyvim.plugins.extras.lang.haskell" },
+        { import = "lazyvim.plugins.extras.lang.ruby" },
         -- linting/formatting
         { import = "lazyvim.plugins.extras.linting.eslint" },
         { import = "lazyvim.plugins.extras.formatting.prettier" },
@@ -39,6 +43,8 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.dap.core" },
         -- editor
         { import = "lazyvim.plugins.extras.editor.mini-files" },
+        { import = "lazyvim.plugins.extras.editor.mini-diff" },
+        { import = "lazyvim.plugins.extras.editor.mini-move" },
         { import = "lazyvim.plugins.extras.editor.leap" },
         { import = "lazyvim.plugins.extras.editor.trouble-v3" },
         { import = "lazyvim.plugins.extras.editor.outline" },
@@ -46,6 +52,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.vscode" },
         { import = "lazyvim.plugins.extras.test.core" },
         -- utils
+        -- { import = "lazyvim.plugins.extras.util.gitui" },
         { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.util.dot" },
 
