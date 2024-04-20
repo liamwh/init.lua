@@ -38,15 +38,24 @@ vim.filetype.add({
 
 -- Set the Lua package paths for Neovim
 local home = os.getenv("HOME")
-package.path = package.path .. ";"
-    .. home .. "/.luarocks/share/lua/5.1/?.lua;"
-    .. home .. "/.luarocks/share/lua/5.1/?/init.lua;"
+package.path = package.path
+    .. ";"
+    .. home
+    .. "/.luarocks/share/lua/5.1/?.lua;"
+    .. home
+    .. "/.luarocks/share/lua/5.1/?/init.lua;"
 
-package.cpath = package.cpath .. ";"
-    .. home .. "/.luarocks/lib/lua/5.1/?.so;"
+package.cpath = package.cpath .. ";" .. home .. "/.luarocks/lib/lua/5.1/?.so;"
 
 -- Set the Python path for Neovim
-vim.g.python3_host_prog = '~/.config/nvim/py3nvim/bin/python'
+vim.g.python3_host_prog = "~/.config/nvim/py3nvim/bin/python"
 
 -- Neovide
 vim.g.neovide_scroll_animation_length = 0.2
+
+-- Add mdx filetype
+vim.filetype.add({
+    extension = {
+        mdx = "markdown",
+    },
+})
