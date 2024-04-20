@@ -2,7 +2,8 @@
 return {
     "rest-nvim/rest.nvim",
     dependencies = { { "nvim-lua/plenary.nvim" } },
-    ft = 'http',
+    ft = "http",
+    enabled = false,
     config = function()
         require("rest-nvim").setup({
             -- Open request results in a horizontal split
@@ -37,12 +38,12 @@ return {
                     json = "jq",
                     html = function(body)
                         return vim.fn.system({ "tidy", "-i", "-q", "-" }, body)
-                    end
+                    end,
                 },
             },
             -- Jump to request line on run
             jump_to_request = false,
-            env_file = '.env',
+            env_file = ".env",
             -- for telescope select
             env_pattern = "\\.env$",
             env_edit_command = "tabedit",
@@ -50,5 +51,5 @@ return {
             yank_dry_run = true,
             search_back = true,
         })
-    end
+    end,
 }
