@@ -35,6 +35,7 @@ return {
             ensure_installed = {
                 -- staples
                 "json",
+                "jsonc",
                 "http",
                 "gitignore",
                 "git_config",
@@ -115,6 +116,7 @@ return {
                 "python",
                 "query",
                 "vim",
+                "kconfig",
                 "ruby",
                 "vimdoc",
                 "query", -- Tree Sitter query
