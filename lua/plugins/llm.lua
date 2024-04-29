@@ -19,20 +19,17 @@ return {
         -- All the user commands added by the plugin
         cmd = { "Ollama", "OllamaModel", "OllamaServe", "OllamaServeStop" },
         opts = {
-            model = "mistral",
+            model = "llama3:8b",
             url = "http://127.0.0.1:11434",
             prompts = {
                 Document_Rust_Code = {
                     prompt = "Add doc comments to the following code. In Rust files, they are denoted by `///`.",
                     input_label = "> ",
-                    model = "mistral",
                     action = "display",
                 },
                 Fix_Bug_With_Selection = {
-                    prompt =
-                    "With this code: \n\n$sel\n\nI get the following error: \n\n$input\n\n Please fix the issue for me. Here's the entire file contents in case that helps: \n\n$buf",
+                    prompt = "With this code: \n\n$sel\n\nI get the following error: \n\n$input\n\n Please fix the issue for me. Here's the entire file contents in case that helps: \n\n$buf",
                     input_label = "> ",
-                    model = "mistral",
                     action = "display",
                 },
             },
