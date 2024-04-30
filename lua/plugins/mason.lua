@@ -16,8 +16,6 @@ return {
             "regols",
             "hadolint",
             "glow",
-            "solargraph", -- Ruby
-            "azure-pipelines-language-server",
             "oxlint",
         },
     },
