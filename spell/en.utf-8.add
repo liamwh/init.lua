@@ -18,3 +18,8 @@ SpiceDB
 CISO
 HPAs
 json
+rego
+yaml
+gRPC
+structs
+Protobuf
