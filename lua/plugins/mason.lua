@@ -2,6 +2,7 @@ return {
     "williamboman/mason.nvim",
     opts = {
         ensure_installed = {
+            -- Do not install the Azure Pipelines Language Server or you will get error messages upon opening .yaml files.
             "prettierd",
             "biome",
             "codelldb",
