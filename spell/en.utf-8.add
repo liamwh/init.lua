@@ -25,3 +25,10 @@ structs
 Protobuf
 Neovim
 ABAC
+ADR
+MinIO
+S3
+PostgreSQL
+CloudNativePG
+Async
+CockroachDB
