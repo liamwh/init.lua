@@ -26,11 +26,11 @@ vim.api.nvim_command("autocmd BufWritePost *.feature !ghokin fmt replace " .. vi
 vim.api.nvim_command("command! Unix !dos2unix %")
 
 -- treat .tfstate files as json
-vim.api.nvim_create_augroup('filetype_tfstate', { clear = true })
-vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
-    pattern = '*.tfstate',
-    command = 'set filetype=json',
-    group = 'filetype_tfstate',
+vim.api.nvim_create_augroup("filetype_tfstate", { clear = true })
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = "*.tfstate",
+    command = "set filetype=json",
+    group = "filetype_tfstate",
 })
 
 -- treat .env.example files akin to .env files
@@ -40,11 +40,11 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 })
 
 -- Use markdown when using firenvim to write Markdown on GitHub
-vim.api.nvim_create_autocmd({ 'BufEnter' }, {
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
     pattern = "github.com_*.txt",
     callback = function()
         vim.bo.filetype = "markdown"
-    end
+    end,
 })
 -- Make sure markdown files use 2 spaces for indentation
 vim.api.nvim_create_autocmd("FileType", {
