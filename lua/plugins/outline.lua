@@ -1,13 +1,13 @@
 return {
-    "simrat39/symbols-outline.nvim",
+    "hedyhli/outline.nvim",
     keys = {
-        { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" },
-        { "<leader>so", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" }
+        { "<leader>cs", "<cmd>Outline<cr>", desc = "Toggle Outline" },
+        { "<leader>so", "<cmd>Outline<cr>", desc = "Symbols Outline" },
     },
-    cmd = "SymbolsOutline",
+    cmd = "Outline",
     opts = function()
         local Config = require("lazyvim.config")
-        local defaults = require("symbols-outline.config").defaults
+        local defaults = require("outline.config").defaults
         local opts = {
             symbols = {},
             symbol_blacklist = {},
