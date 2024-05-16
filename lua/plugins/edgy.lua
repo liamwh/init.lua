@@ -102,6 +102,9 @@ return {
                     win:resize("height", -5)
                 end,
             },
+            animate = {
+                enabled = false,
+            },
         }
         -- Edgy Aerial configuration
         local edgy_idx = LazyVim.plugin.extra_idx("ui.edgy")
