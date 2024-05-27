@@ -36,10 +36,14 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.formatting.prettier" },
         -- ui
         { import = "lazyvim.plugins.extras.ui.alpha" },
+        { import = "lazyvim.plugins.extras.ui.treesitter-context" },
+        { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
         { import = "lazyvim.plugins.extras.ui.edgy" },
         -- coding
         { import = "lazyvim.plugins.extras.coding.copilot" },
+        { import = "lazyvim.plugins.extras.coding.copilot-chat" },
         { import = "lazyvim.plugins.extras.coding.yanky" },
+        { import = "lazyvim.plugins.extras.coding.mini-surround" },
         -- dap
         { import = "lazyvim.plugins.extras.dap.core" },
         -- editor
@@ -48,13 +52,14 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.editor.mini-move" },
         { import = "lazyvim.plugins.extras.editor.leap" },
         { import = "lazyvim.plugins.extras.editor.aerial" },
-        -- { import = "lazyvim.plugins.extras.editor.trouble-v3" },
+        { import = "lazyvim.plugins.extras.editor.trouble-v3" },
         -- { import = "lazyvim.plugins.extras.editor.outline" },
         -- other
         { import = "lazyvim.plugins.extras.vscode" },
         { import = "lazyvim.plugins.extras.test.core" },
         -- utils
         -- { import = "lazyvim.plugins.extras.util.gitui" },
+        { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
         { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.util.dot" },
 
