@@ -59,3 +59,9 @@ vim.filetype.add({
         mdx = "markdown",
     },
 })
+
+vim.filetype.add({
+    extension = {
+        hurl = "hurl",
+    },
+})
