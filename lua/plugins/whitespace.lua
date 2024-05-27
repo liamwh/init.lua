@@ -1,5 +1,6 @@
 return {
     "kaplanz/retrail.nvim",
+    enabled = false,
     opts = {
         -- Highlight group to use for trailing whitespace.
         hlgroup = "Search",
