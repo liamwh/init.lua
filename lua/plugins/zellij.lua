@@ -1,7 +1,7 @@
 return {
     "https://git.sr.ht/~swaits/zellij-nav.nvim",
-    -- lazy = true,
-    -- event = "VeryLazy",
+    lazy = true,
+    event = "VeryLazy",
     keys = {
         { "<c-h>", "<cmd>ZellijNavigateLeft<cr>", { silent = true, desc = "navigate left" } },
         { "<c-j>", "<cmd>ZellijNavigateDown<cr>", { silent = true, desc = "navigate down" } },
