@@ -12,6 +12,11 @@ vim.api.nvim_set_keymap("n", "<leader>gb", ":Git blame<CR>", { noremap = true, s
 -- vim.api.nvim_set_keymap("n", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
 -- vim.api.nvim_set_keymap("v", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
 
+vim.api.nvim_set_keymap("n", "<M-,>", "<c-w>5<", { desc = "Adjust window" })
+vim.api.nvim_set_keymap("n", "<M-.>", "<c-w>5>", { desc = "Adjust window" })
+vim.api.nvim_set_keymap("n", "<M-t>", "<C-W>+", { desc = "Make window taller" })
+vim.api.nvim_set_keymap("n", "<M-s>", "<C-W>-", { desc = "Make window shorter" })
+
 -- Substitute (mentally named replace, hence the r)
 vim.api.nvim_set_keymap(
     "n",
