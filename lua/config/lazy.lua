@@ -47,6 +47,7 @@ require("lazy").setup({
         -- dap
         { import = "lazyvim.plugins.extras.dap.core" },
         -- editor
+        { import = "lazyvim.plugins.extras.editor.dial" },
         { import = "lazyvim.plugins.extras.editor.mini-files" },
         { import = "lazyvim.plugins.extras.editor.mini-diff" },
         { import = "lazyvim.plugins.extras.editor.mini-move" },

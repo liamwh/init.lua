@@ -27,6 +27,7 @@
   "haskell-tools.nvim": { "branch": "master", "commit": "35ac2d964b004d0d0e0cc9bab039b70be36ca0f7" },
   "headlines.nvim": { "branch": "master", "commit": "618ef1b2502c565c82254ef7d5b04402194d9ce3" },
   "html5.vim": { "branch": "master", "commit": "485f2cd62162c81e56d8604b4c630f0b5ef69d1f" },
+  "hurl.nvim": { "branch": "main", "commit": "6d400613c92c2395471ca7f3de7991d7e8c488d9" },
   "indent-blankline.nvim": { "branch": "master", "commit": "d98f537c3492e87b6dc6c2e3f66ac517528f406f" },
   "just-vim": { "branch": "master", "commit": "31e2cf3c0a2c7d3c9ca44199200c0969b037cfba" },
   "keymap-amend.nvim": { "branch": "master", "commit": "b8bf9d820878d5497fdd11d6de55dea82872d98e" },
