@@ -12,10 +12,20 @@ vim.api.nvim_set_keymap("n", "<leader>gb", ":Git blame<CR>", { noremap = true, s
 -- vim.api.nvim_set_keymap("n", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
 -- vim.api.nvim_set_keymap("v", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
 
-vim.api.nvim_set_keymap("n", "<M-,>", "<c-w>5<", { desc = "Adjust window" })
-vim.api.nvim_set_keymap("n", "<M-.>", "<c-w>5>", { desc = "Adjust window" })
-vim.api.nvim_set_keymap("n", "<M-t>", "<C-W>+", { desc = "Make window taller" })
-vim.api.nvim_set_keymap("n", "<M-s>", "<C-W>-", { desc = "Make window shorter" })
+vim.api.nvim_set_keymap(
+    "n",
+    "<M-Right>",
+    "<C-w>5<",
+    { noremap = false, silent = true, desc = "Decrease width on the left" }
+)
+vim.api.nvim_set_keymap(
+    "n",
+    "<M-Left>",
+    "<C-w>5>",
+    { noremap = false, silent = true, desc = "Increase width on the right" }
+)
+vim.api.nvim_set_keymap("n", "<M-Up>", "<C-w>+", { noremap = false, silent = true, desc = "Increase window height" })
+vim.api.nvim_set_keymap("n", "<M-Down>", "<C-w>-", { noremap = false, silent = true, desc = "Decrease window height" })
 
 -- Substitute (mentally named replace, hence the r)
 vim.api.nvim_set_keymap(
