@@ -37,8 +37,6 @@ return {
                         return not vim.b[buf].lazyterm_cmd
                     end,
                 },
-                "Trouble",
-                { ft = "qf", title = "QuickFix" },
                 {
                     ft = "help",
                     size = { height = 20 },
@@ -47,8 +45,13 @@ return {
                         return vim.bo[buf].buftype == "help"
                     end,
                 },
+            },
+            right = {
+                "Trouble",
+                { ft = "qf", title = "QuickFix" },
                 { title = "Spectre", ft = "spectre_panel", size = { height = 0.4 } },
                 { title = "Neotest Output", ft = "neotest-output-panel", size = { height = 15 } },
+                { title = "Hurl Nvim", size = { width = 0.5 }, ft = "hurl-nvim" },
             },
             left = {
                 {
