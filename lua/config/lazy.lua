@@ -23,6 +23,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.go" },
         { import = "lazyvim.plugins.extras.lang.elixir" },
         { import = "lazyvim.plugins.extras.lang.markdown" },
+        { import = "lazyvim.plugins.extras.lang.omnisharp" },
         { import = "lazyvim.plugins.extras.lang.python" },
         { import = "lazyvim.plugins.extras.lang.ansible" },
         { import = "lazyvim.plugins.extras.lang.docker" },
