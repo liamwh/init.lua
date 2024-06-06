@@ -29,6 +29,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.nushell" },
         { import = "lazyvim.plugins.extras.lang.elixir" },
         { import = "lazyvim.plugins.extras.lang.astro" },
+        { import = "lazyvim.plugins.extras.lang.svelte" },
         { import = "lazyvim.plugins.extras.lang.git" },
         { import = "lazyvim.plugins.extras.lang.omnisharp" },
         { import = "lazyvim.plugins.extras.lang.python" },
@@ -61,6 +62,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.editor.mini-diff" },
         { import = "lazyvim.plugins.extras.editor.mini-move" },
         { import = "lazyvim.plugins.extras.editor.illuminate" },
+        { import = "lazyvim.plugins.extras.editor.inc-rename" },
         { import = "lazyvim.plugins.extras.editor.leap" },
         { import = "lazyvim.plugins.extras.editor.aerial" },
         -- { import = "lazyvim.plugins.extras.editor.outline" },
@@ -72,6 +74,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
         { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.util.dot" },
+        { import = "lazyvim.plugins.extras.util.startuptime" },
 
         -- import/override with your plugins
         { import = "plugins" },
