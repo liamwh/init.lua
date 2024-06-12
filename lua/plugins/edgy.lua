@@ -45,10 +45,10 @@ return {
                         return vim.bo[buf].buftype == "help"
                     end,
                 },
+                { ft = "qf", title = "QuickFix" },
             },
             right = {
                 "Trouble",
-                { ft = "qf", title = "QuickFix" },
                 { title = "Spectre", ft = "spectre_panel", size = { height = 0.4 } },
                 { title = "Neotest Output", ft = "neotest-output-panel", size = { height = 15 } },
                 { title = "Hurl Nvim", size = { width = 0.5 }, ft = "hurl-nvim" },
