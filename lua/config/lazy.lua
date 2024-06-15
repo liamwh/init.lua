@@ -77,6 +77,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
         { import = "lazyvim.plugins.extras.util.project" },
         { import = "lazyvim.plugins.extras.util.dot" },
+        { import = "lazyvim.plugins.extras.util.octo" },
         { import = "lazyvim.plugins.extras.util.startuptime" },
 
         -- import/override with your plugins
