@@ -65,3 +65,6 @@ vim.filetype.add({
         hurl = "hurl",
     },
 })
+
+-- Disable messages like "X lines yanked"
+vim.opt.report = 10000
