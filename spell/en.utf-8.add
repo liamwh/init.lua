@@ -64,3 +64,5 @@ OpenFGA
 backends
 postgres
 wasmCloud
+backends
+ReBAC
