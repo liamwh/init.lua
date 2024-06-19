@@ -51,7 +51,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.ui.alpha" },
         { import = "lazyvim.plugins.extras.ui.treesitter-context" },
         { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
-        { import = "lazyvim.plugins.extras.ui.edgy" },
+        -- { import = "lazyvim.plugins.extras.ui.edgy" },
         -- coding
         { import = "lazyvim.plugins.extras.coding.copilot" },
         { import = "lazyvim.plugins.extras.coding.copilot-chat" },
@@ -61,6 +61,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.dap.core" },
         -- editor
         { import = "lazyvim.plugins.extras.editor.dial" },
+        -- { import = "lazyvim.plugins.extras.editor.fzf" },
         { import = "lazyvim.plugins.extras.editor.mini-files" },
         { import = "lazyvim.plugins.extras.editor.mini-diff" },
         { import = "lazyvim.plugins.extras.editor.mini-move" },
