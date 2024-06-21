@@ -12,7 +12,7 @@ return {
         opts = {
             schemas = {
                 {
-                    name = "wadm schema",
+                    name = "WADM Manifest",
                     uri = "https://raw.githubusercontent.com/wasmCloud/wadm/main/crates/wadm/oam.schema.json",
                 },
             },
