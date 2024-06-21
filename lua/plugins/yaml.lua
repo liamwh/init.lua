@@ -9,6 +9,37 @@ return {
             { "nvim-lua/plenary.nvim" },
             { "nvim-telescope/telescope.nvim" },
         },
+        opts = {
+            schemas = {
+                {
+                    name = "wadm schema",
+                    uri = "https://raw.githubusercontent.com/wasmCloud/wadm/main/crates/wadm/oam.schema.json",
+                },
+            },
+            lspconfig = {
+                flags = {
+                    debounce_text_changes = 150,
+                },
+                settings = {
+                    redhat = { telemetry = { enabled = false } },
+                    yaml = {
+                        validate = true,
+                        format = { enable = true },
+                        hover = true,
+                        schemaStore = {
+                            enable = true,
+                            url = "https://www.schemastore.org/api/json/catalog.json",
+                        },
+                        schemaDownload = { enable = true },
+                        schemas = {
+                            name = "WADM Manifest",
+                            uri = "https://raw.githubusercontent.com/wasmCloud/wadm/main/crates/wadm/oam.schema.json",
+                        },
+                        trace = { server = "debug" },
+                    },
+                },
+            },
+        },
         config = function(_, opts)
             local cfg = require("yaml-companion").setup(opts)
             require("lspconfig")["yamlls"].setup(cfg)
