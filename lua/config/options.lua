@@ -9,8 +9,8 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.wrap = false
--- vim.g.lazyvim_picker = "fzf"
-vim.g.lazyvim_picker = "telescope"
+vim.g.lazyvim_picker = "fzf"
+-- vim.g.lazyvim_picker = "telescope"
 
 vim.opt.swapfile = false
 vim.opt.backup = false
