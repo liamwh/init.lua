@@ -85,3 +85,40 @@ vim.api.nvim_create_autocmd("BufLeave", {
         require("mini.surround").setup(default_surround_config)
     end,
 })
+
+-- Function to create a markdown link using clipboard content if it is a link
+_G.custom_paste = function()
+    -- Get the clipboard content
+    local clipboard = vim.fn.getreg("+")
+
+    -- Check if the clipboard content is a link (simple regex check)
+    if clipboard:match("^https?://") then
+        -- Get the selected text
+        local start_pos = vim.fn.getpos("'<")
+        local end_pos = vim.fn.getpos("'>")
+
+        -- Read the selected text
+        local selected_text = vim.fn.getline(start_pos[2]):sub(start_pos[3], end_pos[3])
+
+        -- Create the markdown link
+        local markdown_link = string.format("[%s](%s)", selected_text, clipboard)
+
+        -- Replace the selected text with the markdown link
+        vim.api.nvim_buf_set_text(0, start_pos[2] - 1, start_pos[3] - 1, end_pos[2] - 1, end_pos[3], { markdown_link })
+    else
+        -- If not a link, replace the selected text with the clipboard content
+        local start_pos = vim.fn.getpos("'<")
+        local end_pos = vim.fn.getpos("'>")
+
+        local clipboard_lines = vim.split(clipboard, "\n")
+        vim.api.nvim_buf_set_text(0, start_pos[2] - 1, start_pos[3] - 1, end_pos[2] - 1, end_pos[3], clipboard_lines)
+    end
+end
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        -- Create a key mapping in visual mode for markdown files
+        vim.api.nvim_buf_set_keymap(0, "v", "p", ":lua custom_paste()<CR>", { noremap = true, silent = true })
+    end,
+})
