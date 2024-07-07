@@ -55,3 +55,33 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.opt_local.expandtab = true
     end,
 })
+
+-- Save the default mini.surround configuration
+local default_surround_config = require("mini.surround").config
+
+-- Define custom surround settings for markdown files
+local markdown_surround_config = vim.tbl_deep_extend("force", {}, default_surround_config, {
+    custom_surroundings = {
+        ["["] = {
+            input = { "%[.-%]" },
+            output = { left = "[", right = "]" },
+        },
+    },
+})
+
+-- Make mini surround not add spaces for [] in markdown files
+-- Autocmd to set custom surround settings for markdown files
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        require("mini.surround").setup(markdown_surround_config)
+    end,
+})
+
+-- Autocmd to revert to default surround settings when leaving markdown files
+vim.api.nvim_create_autocmd("BufLeave", {
+    pattern = "*.md",
+    callback = function()
+        require("mini.surround").setup(default_surround_config)
+    end,
+})
