@@ -130,6 +130,7 @@
   "vimtex": { "branch": "master", "commit": "2dc2a5435809c13f6f4aa07964be4ef19a7864f5" },
   "which-key.nvim": { "branch": "main", "commit": "0099511294f16b81c696004fa6a403b0ae61f7a0" },
   "wildfire.vim": { "branch": "master", "commit": "dfcf48aad2e80c63272df67a1b81e37cbc443412" },
+  "window-picker": { "branch": "main", "commit": "41cfaa428577c53552200a404ae9b3a0b5719706" },
   "yaml-companion.nvim": { "branch": "main", "commit": "d190d6c0852a1b3fd2798cf1529655f7f68655d3" },
   "yanky.nvim": { "branch": "main", "commit": "73215b77d22ebb179cef98e7e1235825431d10e4" },
   "zellij-nav.nvim": { "branch": "main", "commit": "25930804397ef540bd2de62f9897bc2db61f9baa" }
