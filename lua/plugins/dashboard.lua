@@ -30,6 +30,18 @@ return {
                 break
             end
         end
+        local lazygit_action = {
+            action = function()
+                LazyVim.lazygit({ cwd = LazyVim.root.git() })
+            end,
+            desc = " Lazygit" .. string.rep(" ", 36),
+            icon = " ",
+            key = "g",
+        }
+        table.insert(opts.config.center, 3, lazygit_action)
+        for _, item in ipairs(opts.config.center) do
+            item.key_format = " %s "
+        end
         return opts
     end,
 }
