@@ -6,6 +6,18 @@ vim.api.nvim_set_keymap("x", "<Down>", ":move '>+1<CR>gv-gv", { noremap = true, 
 vim.api.nvim_set_keymap("n", "d", '"_d', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "dd", '"_dd', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "di", '"_di', { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>th",
+    ":split <bar> terminal<CR>i",
+    { noremap = true, silent = true, desc = "Open new terminal" }
+)
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>tv",
+    ":vsplit <bar> terminal<CR>i",
+    { noremap = true, silent = true, desc = "Open new terminal" }
+)
 
 -- Ollama / gen.nvim
 -- vim.api.nvim_set_keymap("n", "<leader>l", ":Gen<CR>", { noremap = true, silent = true, desc = "LLM" })
