@@ -51,7 +51,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
         -- { import = "lazyvim.plugins.extras.ui.edgy" },
         -- coding
-        { import = "lazyvim.plugins.extras.coding.copilot" },
+        -- { import = "lazyvim.plugins.extras.coding.copilot" },
         { import = "lazyvim.plugins.extras.coding.copilot-chat" },
         { import = "lazyvim.plugins.extras.coding.yanky" },
         { import = "lazyvim.plugins.extras.coding.mini-surround" },
