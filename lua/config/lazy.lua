@@ -39,7 +39,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.lang.tex" },
         { import = "lazyvim.plugins.extras.lang.helm" },
-        { import = "lazyvim.plugins.extras.lang.haskell" },
+        -- { import = "lazyvim.plugins.extras.lang.haskell" },
         -- { import = "lazyvim.plugins.extras.lang.clojure" },
         -- { import = "lazyvim.plugins.extras.lang.php" },
         -- { import = "lazyvim.plugins.extras.lang.ruby" },
