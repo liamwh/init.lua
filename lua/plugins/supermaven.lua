@@ -1,9 +1,15 @@
 return {
     {
         "supermaven-inc/supermaven-nvim",
+        enabled = true,
         config = function()
             require("supermaven-nvim").setup({
                 log_level = "info",
+                keymaps = {
+                    accept_suggestion = "<C-]>",
+                    clear_suggestion = "<C-[>",
+                    accept_word = "<C-j>",
+                },
             })
         end,
     },
