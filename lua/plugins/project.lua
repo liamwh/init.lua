@@ -2,10 +2,10 @@ return {
     "ahmedkhalf/project.nvim",
     opts = {
         manual_mode = false,
-        patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "justfile" },
+        patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile" },
         exlude_dirs = { "~/.cargo/*", "~/git/Veloxide/frontends/*" },
         silent_chdir = false,
-        scope_chdir = 'tab',
+        scope_chdir = "tab",
     },
     event = "VeryLazy",
     config = function(_, opts)
