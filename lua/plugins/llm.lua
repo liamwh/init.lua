@@ -20,7 +20,7 @@ return {
         cmd = { "Ollama", "OllamaModel", "OllamaServe", "OllamaServeStop" },
         opts = {
             model = "llama3:8b",
-            url = "http://127.0.0.1:11434",
+            url = "http://127.0.0.1:11435",
             prompts = {
                 Document_Rust_Code = {
                     prompt = "Add doc comments to the following code. In Rust files, they are denoted by `///`.",
