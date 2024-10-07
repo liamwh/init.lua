@@ -70,3 +70,6 @@ vim.filetype.add({
 
 -- Disable messages like "X lines yanked"
 vim.opt.report = 10000
+
+-- ensures that the status line is always visible as a single global status line for all windows, rather than having a separate status line for each window.
+vim.opt.laststatus = 3
