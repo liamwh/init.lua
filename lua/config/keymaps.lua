@@ -89,3 +89,9 @@ vim.api.nvim_set_keymap(
     "<cmd>lua require('substitute.exchange').cancel()<CR>",
     { noremap = true, silent = true, desc = "Cancel Exchange" }
 )
+
+if not not vim.g.vscode then
+    vim.keymap.set({ "n", "x", "i" }, "<C-d>", function()
+        require("vscode-multi-cursor").addSelectionToNextFindMatch()
+    end)
+end
