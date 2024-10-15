@@ -9,8 +9,6 @@ return {
             "",
             "",
             "",
-            "",
-            "",
             "      ████ ██████           █████      ██                    ",
             "     ███████████             █████                            ",
             "     █████████ ███████████████████ ███   ███████████  ",
@@ -38,7 +36,17 @@ return {
             icon = " ",
             key = "g",
         }
+        local terminal_action = {
+            action = function()
+                vim.cmd("terminal")
+                vim.cmd("startinsert")
+            end,
+            desc = " Open Terminal" .. string.rep(" ", 33),
+            icon = " ",
+            key = "t",
+        }
         table.insert(opts.config.center, 3, lazygit_action)
+        table.insert(opts.config.center, 4, terminal_action)
         for _, item in ipairs(opts.config.center) do
             item.key_format = " %s "
         end
