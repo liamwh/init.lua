@@ -7,7 +7,10 @@ return {
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "ayu",
+            colorscheme = "dracula",
         },
+    },
+    {
+        "https://github.com/Mofiqul/dracula.nvim.git",
     },
 }

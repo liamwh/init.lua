@@ -99,7 +99,7 @@ require("lazy").setup({
         -- Same but for Neovim's news.txt
         neovim = true,
     },
-    install = { colorscheme = { "tokyonight", "habamax" } },
+    install = { colorscheme = { "tokyonight", "habamax", "dracula" } },
     checker = {
         enabled = true, -- automatically check for plugin updates
         notify = false, -- don't notify about updates on startup
