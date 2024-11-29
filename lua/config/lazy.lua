@@ -25,7 +25,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.toml" },
         { import = "lazyvim.plugins.extras.lang.nix" },
         { import = "lazyvim.plugins.extras.lang.gleam" },
-        { import = "lazyvim.plugins.extras.lang.nushell" },
+        -- { import = "lazyvim.plugins.extras.lang.nushell" },
         { import = "lazyvim.plugins.extras.lang.sql" },
         -- { import = "lazyvim.plugins.extras.lang.elixir" },
         { import = "lazyvim.plugins.extras.lang.astro" },
