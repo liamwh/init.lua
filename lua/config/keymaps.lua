@@ -95,3 +95,8 @@ if not not vim.g.vscode then
         require("vscode-multi-cursor").addSelectionToNextFindMatch()
     end)
 end
+
+
+-- Save with ⌘ + S
+vim.api.nvim_set_keymap('n', '<D-s>', ':w<CR>', { noremap = true, silent = true })
+
