@@ -5,10 +5,6 @@ return {
         dependencies = { "othree/html5.vim", "pangloss/vim-javascript" },
     },
     {
-        -- Justfiles
-        "vmchale/just-vim",
-    },
-    {
         "bufbuild/tree-sitter-cel",
     },
     {
