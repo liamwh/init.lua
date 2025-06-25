@@ -2,6 +2,11 @@ return {
     "nvimdev/dashboard-nvim",
     enabled = true,
     opts = function(_, opts)
+        opts.config = opts.config or {
+            header = {},
+            center = {},
+            footer = {},
+        }
         local dashboard_custom_header = {
             "",
             "",
