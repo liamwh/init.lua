@@ -89,6 +89,8 @@ vim.api.nvim_set_keymap(
     "<cmd>lua require('substitute.exchange').cancel()<CR>",
     { noremap = true, silent = true, desc = "Cancel Exchange" }
 )
+vim.keymap.set("n", "gy", vim.lsp.buf.type_definition, { desc = "Go to Type Definition" })
+
 
 if not not vim.g.vscode then
     vim.keymap.set({ "n", "x", "i" }, "<C-d>", function()
