@@ -153,7 +153,10 @@ map('n', '<leader>fh',          cmd('timeline.focus'),                  opts)
 map('n', '<leader>sr',          cmd('editor.action.startFindReplaceAction'), opts)
 
 -- Git / GitLens / Lazygit wrapper
-map('n', '<leader>gg',          cmd('extension.multiCommand.closeSidebarAndOpenLazyGit'), opts)
+-- map('n', '<leader>gg',          cmd('extension.multiCommand.closeSidebarAndOpenLazyGit'), opts)
+vim.keymap.set('n', '<leader>gg', function()
+  vim.fn.VSCodeNotify('lazygit-vscode.toggle')
+end, { noremap = true, silent = true })
 map('n', '<leader>gbl',         cmd('gitlens.toggleLineBlame'),         opts)
 map('n', '<leader>gbf',         cmd('gitlens.toggleFileBlame'),         opts)
 map('n', '<leader>gh',          cmd('workbench.scm.history.focus'),     opts)
